@@ -1,0 +1,368 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Admission Form</title>
+
+    
+    <link rel="stylesheet" href="sample.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>Student Admission Form</h1>
+        <p class="subtitle">
+            Please fill in the details carefully to complete the admission process.
+        </p>
+
+
+        <form>
+
+            <!-- Personal Information -->
+            <h2>Personal Information</h2>
+
+            <div class="form-grid">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                    >
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender</label>
+
+                    <div class="gender">
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                required
+                            >
+                            Male
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                            >
+                            Female
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="other"
+                            >
+                            Other
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter phone number"
+                        required
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email address"
+                        required
+                    >
+                </div>
+
+                <!-- Aadhar -->
+                <div class="form-group">
+                    <label for="aadhar">Aadhar Number</label>
+                    <input
+                        type="text"
+                        id="aadhar"
+                        name="aadhar"
+                        placeholder="Enter Aadhar number"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Academic Information -->
+            <h2>Academic Information</h2>
+
+            <div class="form-grid">
+
+                <!-- Course -->
+                <div class="form-group">
+                    <label for="course">Course</label>
+
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bca">BCA</option>
+                        <option value="bsc">B.Sc</option>
+                        <option value="bba">BBA</option>
+                        <option value="mca">MCA</option>
+                        <option value="mba">MBA</option>
+                    </select>
+                </div>
+
+                <!-- Department -->
+                <div class="form-group">
+                    <label for="department">Department</label>
+
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="cse">
+                            Computer Science & Engineering
+                        </option>
+                        <option value="ece">
+                            Electronics & Communication Engineering
+                        </option>
+                        <option value="eee">
+                            Electrical & Electronics Engineering
+                        </option>
+                        <option value="me">
+                            Mechanical Engineering
+                        </option>
+                        <option value="ce">
+                            Civil Engineering
+                        </option>
+                    </select>
+                </div>
+
+                <!-- Previous Qualification -->
+                <div class="form-group">
+                    <label for="qualification">
+                        Previous Qualification
+                    </label>
+
+                    <input
+                        type="text"
+                        id="qualification"
+                        name="qualification"
+                        placeholder="e.g. Intermediate / Diploma"
+                        required
+                    >
+                </div>
+
+                <!-- Percentage -->
+                <div class="form-group">
+                    <label for="percentage">Percentage / CGPA</label>
+
+                    <input
+                        type="text"
+                        id="percentage"
+                        name="percentage"
+                        placeholder="Enter percentage or CGPA"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Address Information -->
+            <h2>Address Information</h2>
+
+            <div class="form-grid">
+
+                <!-- Address -->
+                <div class="form-group full-width">
+                    <label for="address">Full Address</label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        placeholder="Enter your complete address"
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- City -->
+                <div class="form-group">
+                    <label for="city">City</label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        placeholder="Enter city"
+                        required
+                    >
+                </div>
+
+                <!-- State -->
+                <div class="form-group">
+                    <label for="state">State</label>
+
+                    <input
+                        type="text"
+                        id="state"
+                        name="state"
+                        placeholder="Enter state"
+                        required
+                    >
+                </div>
+
+                <!-- Pincode -->
+                <div class="form-group">
+                    <label for="pincode">PIN Code</label>
+
+                    <input
+                        type="text"
+                        id="pincode"
+                        name="pincode"
+                        placeholder="Enter PIN code"
+                        required
+                    >
+                </div>
+
+                <!-- Country -->
+                <div class="form-group">
+                    <label for="country">Country</label>
+
+                    <input
+                        type="text"
+                        id="country"
+                        name="country"
+                        value="India"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Parent / Guardian Information -->
+            <h2>Parent / Guardian Information</h2>
+
+            <div class="form-grid">
+
+                <!-- Parent Name -->
+                <div class="form-group">
+                    <label for="parentName">
+                        Parent / Guardian Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="parentName"
+                        name="parentName"
+                        placeholder="Enter parent/guardian name"
+                        required
+                    >
+                </div>
+
+                <!-- Parent Phone -->
+                <div class="form-group">
+                    <label for="parentPhone">
+                        Parent / Guardian Phone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="parentPhone"
+                        name="parentPhone"
+                        placeholder="Enter phone number"
+                        required
+                    >
+                </div>
+
+                <!-- Occupation -->
+                <div class="form-group">
+                    <label for="occupation">Parent Occupation</label>
+
+                    <input
+                        type="text"
+                        id="occupation"
+                        name="occupation"
+                        placeholder="Enter occupation"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Terms -->
+            <div class="terms">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="terms"
+                        required
+                    >
+
+                    I confirm that the information provided above
+                    is correct and complete.
+                </label>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="button-group">
+
+                <button
+                    type="reset"
+                    class="reset-btn"
+                >
+                    Reset
+                </button>
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Submit Application
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+```
